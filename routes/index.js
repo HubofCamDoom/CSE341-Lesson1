@@ -1,10 +1,10 @@
 const routes = require('express').Router();
 const firstController = require('../controllers');
 
-//my name
+//other name
 routes.get('/', firstController.getName);
 
-//the other name
+//my name
 routes.get('/other', firstController.getOtherName);
 
 module.exports = routes;
